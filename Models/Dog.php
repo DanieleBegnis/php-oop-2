@@ -12,5 +12,6 @@ class Dog extends Category {
         $this->price = $_price;
         $this->animal = $_animal;
     }
+
 }
 ?>
