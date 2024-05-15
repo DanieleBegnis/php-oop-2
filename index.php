@@ -10,11 +10,11 @@ require_once __DIR__ . '/Models/Category.php';
 require_once __DIR__ . '/Models/Dog.php';
 require_once __DIR__ . '/Models/Cat.php';
 
-$ciotola = new Category('Pippolo', 'Ciotola', 'Lorem ipsum');
-$osso = new Category('Ossolo', 'osso', 'Lorem ipsum');
-$guinzaglio = new Category('Guinzagliolo', 'guinzaglio', 'Lorem ipsum');
-$palla = new Category('Pallolo', 'palla', 'Lorem ipsum');
-$croccantini = new Category('Croccantinolo', 'croccantini', 'Lorem ipsum');
+$ciotola = new Category('Pippolo', 'Ciotola', 'Lorem ipsum', 'https://picsum.photos/seed/picsum/200/300');
+$osso = new Category('Ossolo', 'osso', 'Lorem ipsum', 'https://picsum.photos/seed/picsum/200/300');
+$guinzaglio = new Category('Guinzagliolo', 'guinzaglio', 'Lorem ipsum', 'https://picsum.photos/seed/picsum/200/300');
+$palla = new Category('Pallolo', 'palla', 'Lorem ipsum', 'https://picsum.photos/seed/picsum/200/300');
+$croccantini = new Category('Croccantinolo', 'croccantini', 'Lorem ipsum', 'https://picsum.photos/seed/picsum/200/300');
 
 $products = [
     $ciotola,
@@ -41,11 +41,11 @@ $products = [
             <?php foreach ($products as $product) { ?>
                 <div class="col-3">
                     <div class="card my-3" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="<?php echo $product->image; ?>" class="card-img-top" alt="<?php echo $product->name; ?>">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $product->name; ?></h5>
                             <p class="card-text"><?php echo $product->description; ?></p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-primary">Go buy product</a>
                         </div>
                     </div>
                 </div>
