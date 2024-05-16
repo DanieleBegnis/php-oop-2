@@ -29,6 +29,10 @@ $products = [
 
 //prodotti specifici cane
 $frisbee = new Dog('Frisbee', 'Frisbee', 'Lorem ipsum frisbee', 'https://picsum.photos/seed/picsum/200/300', '12.99$', 'Per Cani');
+
+//metto attributo colore
+$frisbee->setColor('rosso');
+
 $guinzaglio_dog = new Dog('Guinzaglio', 'guinzaglio', 'Lorem ipsum guinzaglio', 'https://picsum.photos/seed/picsum/200/300', '6.99$', 'Per Cani');
 $pappe = new Dog('Pappe', 'cibo', 'Lorem ipsum cibo cibo cibo', 'https://picsum.photos/seed/picsum/200/300', '5.99$', 'Per Cani');
 $sacchettini = new Dog('Sacchettini', 'pulizia', 'Lorem ipsum bl bla bla bla bla bla', 'https://picsum.photos/seed/picsum/200/300', '16.99$', 'Per Cani');
@@ -44,6 +48,10 @@ $dog_products = [
 $pappine = new Dog('pappa ', 'cibo', 'Lorem ipsum papp abagnata che piace tanto', 'https://picsum.photos/seed/picsum/200/300', '6.99$', 'Per Gatti');
 $laser = new Dog('Laser', 'giocattolo', 'Lorem ipsum lase laser gioco per gatti', 'https://picsum.photos/seed/picsum/200/300', '3.99$', 'Per Gatti');
 $ciotolina = new Dog('Ciotolina', 'cibo', 'Lorem ipsum cibo cibo cibo', 'https://picsum.photos/seed/picsum/200/300', '12.50$', 'Per Gatti');
+
+//metto attributo colore
+$ciotolina->setColor('verde');
+
 $sabbietta = new Dog('Sabbietta', 'pulizia', 'Lorem ipsum bl bla bla bla bla bla', 'https://picsum.photos/seed/picsum/200/300', '7.99$', 'Per Gatti');
 
 $cat_products = [

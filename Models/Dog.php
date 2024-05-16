@@ -1,7 +1,9 @@
 <?php
 require_once __DIR__ . '/Category.php';
+require_once __DIR__ . '/../Traits/Color.php';
 
 class Dog extends Category {
+    use Color;
     public $price;
     public $animal;
 
