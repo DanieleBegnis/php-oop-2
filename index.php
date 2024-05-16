@@ -101,6 +101,9 @@ $cat_products = [
                             <p class="card-text"><?php echo $product->description; ?></p>
                             <h4 class="card-text"><?php echo $product->price; ?></h4>
                             <p class="card-text"><?php echo $product->animal; ?></p>
+                            <?php if ($product->color) { ?>
+                                <div class="py-2">Colore: <?php echo $product->color ?></div>
+                            <?php } ?>
                             <a href="#" class="btn btn-primary">Go buy product</a>
                         </div>
                     </div>
@@ -118,6 +121,9 @@ $cat_products = [
                             <p class="card-text"><?php echo $product->description; ?></p>
                             <h4 class="card-text"><?php echo $product->price; ?></h4>
                             <p class="card-text"><?php echo $product->animal; ?></p>
+                            <?php if ($product->color) { ?>
+                                <div class="py-2">Colore: <?php echo $product->color ?></div>
+                            <?php } ?>
                             <a href="#" class="btn btn-primary">Go buy product</a>
                         </div>
                     </div>

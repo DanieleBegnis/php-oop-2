@@ -1,6 +1,6 @@
 <?php
 trait Color {
-    protected $color;
+    public $color;
 
     public function getColor() {
         return $this->color;
